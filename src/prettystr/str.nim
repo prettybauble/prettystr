@@ -34,6 +34,7 @@ func write*(src: var string, pos: int, val: SomeInteger) =
   ## Writes the number to the specified position in the string.
   cast[ptr typeof(val)](addr src[pos])[] = val
 
+
 func pop*(src: var string, pos: int = -1): char {.discardable.} =
   ## Pops the char at specified position and returns this char.
   if pos < 0:
