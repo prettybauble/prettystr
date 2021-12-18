@@ -1,8 +1,8 @@
 <div align="center">
   
-# prettytmpl
-### template for prettybauble repositories
-[![tests](https://github.com/prettybauble/prettytmpl/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettytmpl/actions/workflows/test.yml)
+# prettystr
+### Small library for working with strings
+[![tests](https://github.com/prettybauble/prettystr/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettystr/actions/workflows/test.yml)
 
 #### Stable version - 1.0.0
 
@@ -11,8 +11,5 @@
 ## Get Started
 Install:
 ```bash
-nimble install prettylib
-```
-```bash
-nimble install github.com/prettybauble/prettytmpl
+nimble install github.com/prettybauble/prettystr
 ```
