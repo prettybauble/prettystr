@@ -4,6 +4,8 @@
 ### template for prettybauble repositories
 [![tests](https://github.com/prettybauble/prettytmpl/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettytmpl/actions/workflows/test.yml)
 
+#### Stable version - 1.0.0
+
 </div>
 
 ## Get Started
