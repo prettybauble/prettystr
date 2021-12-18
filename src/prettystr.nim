@@ -1,6 +1,7 @@
 # author: Ethosa
 import exceptions
 
+
 {.push inline.}
 
 func add*(src: var string, val: SomeInteger) =
