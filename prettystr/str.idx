@@ -1,0 +1,5 @@
+add	prettystr/str.html#add,string,SomeInteger	str: add(src: var string; val: SomeInteger)	
+insert	prettystr/str.html#insert,string,int,SomeInteger	str: insert(src: var string; pos: int; val: SomeInteger)	
+read	prettystr/str.html#read,string,int	str: read[T](src: string; pos: int): T	
+write	prettystr/str.html#write,string,int,SomeInteger	str: write(src: var string; pos: int; val: SomeInteger)	
+pop	prettystr/str.html#pop,string,int	str: pop(src: var string; pos: int = -1): char	
