@@ -1,5 +1,5 @@
 # author: Ethosa
-import exceptions
+import prettystr/exceptions
 
 
 {.push inline.}
