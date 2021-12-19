@@ -56,3 +56,13 @@ suite "Prettystring":
 
     assert source.pop() == '\x04'
     assert source == "\x01\x03"
+
+  test "swap":
+    var
+      source: string
+      number = 1024u16
+
+    assert number.swap == 4
+
+    source.add(number.swap())
+    assert source == "\x04\x00"

@@ -22,12 +22,11 @@ func insert*(src: var string, pos: int, val: SomeInteger) =
 func read*[T](src: string, pos: int): T =
   ## Reads T from string. Can any integer.
   if T is SomeInteger:
-    cast[ptr T](unsafeaddr src[pos])[]
-  else:
-    raise newException(
-      ReadFromStringError,
-      "Only integer can readed"
-    )
+    return cast[ptr T](unsafeaddr src[pos])[]
+  raise newException(
+    ReadFromStringError,
+    "Only integer can readed"
+  )
 
 
 func write*(src: var string, pos: int, val: SomeInteger) =
@@ -46,5 +45,24 @@ func pop*(src: var string, pos: int = -1): char {.discardable.} =
   else:
     result = src[pos]
     src = src[0..pos-1] & src[pos+1..^1]
+
+func swap*(val: uint16): uint16 =
+  let tmp = cast[array[2, uint8]](val)
+  (uint16(tmp[0]) shl 8) or uint16(tmp[1])
+
+func swap*(val: uint32): uint32 =
+  let tmp = cast[array[2, uint16]](val)
+  (uint32(swap(tmp[0])) shl 16) or swap(tmp[1])
+
+func swap*(val: uint64): uint64 =
+  let tmp = cast[array[2, uint32]](val)
+  (uint64(swap(tmp[0])) shl 32) or swap(tmp[1])
+
+func swap*(val: int16): int16 =
+  int16(swap(uint16(val)))
+func swap*(val: int32): int32 =
+  int32(swap(uint32(val)))
+func swap*(val: int64): int64 =
+  int64(swap(uint64(val)))
 
 {.pop.}

@@ -1,5 +1,7 @@
 # author: Ethosa
 ## This module describes all exceptions.
 
+{.push size: sizeof(int8).}
 type
-  ReadFromStringError* {.size: sizeof(int8).} = object of CatchableError
+  ReadFromStringError* = object of CatchableError
+{.pop.}

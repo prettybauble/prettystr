@@ -1,7 +1,7 @@
 [Package]
 name = "prettystr"
 author = "prettybauble"
-version = "1.0.1"
+version = "1.0.2"
 description = "Small library for working with strings"
 license = "MIT"
 srcDir = "src"
