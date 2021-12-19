@@ -9,7 +9,7 @@
 </div>
 
 ## Get Started
-Install:
+### Install
 ```bash
 nimble install prettystr
 ```
