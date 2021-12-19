@@ -3,3 +3,9 @@ insert	prettystr/str.html#insert,string,int,SomeInteger	str: insert(src: var str
 read	prettystr/str.html#read,string,int	str: read[T](src: string; pos: int): T	
 write	prettystr/str.html#write,string,int,SomeInteger	str: write(src: var string; pos: int; val: SomeInteger)	
 pop	prettystr/str.html#pop,string,int	str: pop(src: var string; pos: int = -1): char	
+swap	prettystr/str.html#swap,uint16	str: swap(val: uint16): uint16	
+swap	prettystr/str.html#swap,uint32	str: swap(val: uint32): uint32	
+swap	prettystr/str.html#swap,uint64	str: swap(val: uint64): uint64	
+swap	prettystr/str.html#swap,int16	str: swap(val: int16): int16	
+swap	prettystr/str.html#swap,int32	str: swap(val: int32): int32	
+swap	prettystr/str.html#swap,int64	str: swap(val: int64): int64	
