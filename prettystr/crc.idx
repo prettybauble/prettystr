@@ -1,0 +1,2 @@
+crc32	prettystr/crc.html#crc32,uint32,string	crc: crc32(v: uint32; data: string): uint32	
+crc32	prettystr/crc.html#crc32	crc: crc32(data: seq[uint8] | string): uint32	
