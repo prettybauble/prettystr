@@ -4,7 +4,7 @@
 ### Small library for working with strings
 [![tests](https://github.com/prettybauble/prettystr/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettystr/actions/workflows/test.yml)
 
-#### Stable version - 1.0.4
+#### Stable version - 1.0.5
 
 </div>
 
