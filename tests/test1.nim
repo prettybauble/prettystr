@@ -66,3 +66,7 @@ suite "Prettystring":
 
     source.add(number.swap())
     assert source == "\x04\x00"
+
+  test "crc 32":
+    var data = "IHDR\x00\x11\x01\x01"
+    echo crc32(data)
